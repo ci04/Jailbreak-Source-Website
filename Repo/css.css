@@ -1,0 +1,186 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+body , html{
+    font-family:"MyFont";
+    font-weight: 12vh;
+    background: #f5f5f5;
+    text-align: center;
+}
+@font-face {
+    font-family: MyFont;
+    src: url(./font/Fonty.otf);
+}
+a{
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+	border-radius: 5px;
+    text-align: center;
+	overflow: hidden;
+    border: none;
+    transition: all 0.2s ease;
+}
+a:hover{
+    color: #383737;
+    transition: all 0.2s ease;
+}
+.AboutApp{
+    display:inline-table;
+    font-family:"MyFont";
+    font-size: 22px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    width: 45px;
+	color: #1a1a1a;
+}
+.AboutApp:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.sileo, .cydia, .Zebra {
+    float: center;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "MyFont";
+    font-size: 19px;
+    margin: 5px;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.491);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    border: 1px solid rgba(162, 162, 162, 0.544);
+	color: #1a1a1a;
+    padding: 8px;
+    background-color: #ececec;
+    transition: 0.4s ease;
+}
+.sileo:active, .cydia:active, .Zebra:active{
+    transition: ease-in-out 0.2s step-end;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    filter: opacity(0.9);
+}
+.sileo:hover{
+    background-color: #27d5cfba;
+    transition:all 0.4s ease ;
+    background-image: linear-gradient(to right, #2cc6c081 ,#00fff7ba);
+    font-size: 20px;
+}
+.cydia:hover{
+    background-color: rgba(202, 144, 74, 0.827);
+    background-image: linear-gradient(to right, rgba(148, 102, 58), rgb(226, 159, 96));
+    transition:all 0.4s ease ;
+    font-size: 20px;
+}
+.Zebra:hover{
+    background-color: #424242dc;
+    color: white;
+    background-image: linear-gradient(to right, #424242dc,rgb(141, 141, 141));
+    transition:all 0.4s ease ;
+    font-size: 20px;
+}
+.TitleALRepo{
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    width: 20%;
+    padding: 8px;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.NameAbout{
+    position: relative;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 8px;
+    width: 250px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.pkgimg{
+    width: 30px;
+    height: 30px;
+    top: 12px;
+}
+.mwdwm{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.urlSrc{
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    background-color: rgba(189, 189, 189, 0);
+    display: inline;
+    transition: 0.0s;
+}
+.urlSrc:active{
+    text-decoration: none;
+    color: #909090;
+    transition: 0.0s;
+}
+.block{
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    display: block;
+    width: 400px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #bdbdbd;
+}
+.cydiaimg{
+    float: left;
+    border-radius: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-style: dashed;
+
+}
+.sileoimg{
+    float: left;
+    border-radius: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-style: dashed;
+}
+.zbraimg{
+    float: left;
+    border-radius: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-style: dashed;
+}
+@media only screen and (max-width: 600px) {
+    .sileo, .cydia, .Zebra,__icon{
+        width: 300px;
+        font-size: 17px;
+    }
+    
+    .TitleALRepo{
+        width: 290px;
+    }
+    .sileo, .cydia, .Zebra{
+        font-size: 17px
+    }
+    .sileo:hover, .cydia:hover, .Zebra:hover{
+        font-size: 18px;
+    }
+    .AboutApp{
+        font-size: 19px;
+    }
+    .block{
+        width: 360px;
+    }
+}
